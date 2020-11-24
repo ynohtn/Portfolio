@@ -1,0 +1,34 @@
+@import '../../../styles/settings/vars';
+@import '../../../styles/anim/keyframes';
+
+.scrollWrapper {
+	position: relative;
+	width: 100%;
+	height: auto;
+	// padding: 100px 0px 100px 0px;
+	// overflow: hidden;
+
+	@include breakpoint($desktop) {
+		padding-top: 29px !important;
+	}
+
+	h1 {
+		padding: 8px 0;
+		margin: 0;
+	}
+}
+
+.scrollContainer {
+	width: 500%;
+	height: 74vh;
+	display: grid;
+	grid-template-columns: repeat(3, 92vw);
+	gap: 0 2px;
+	padding: 0px;
+	overflow: hidden;
+
+	@include breakpoint($desktop) {
+		grid-template-columns: repeat(3, 98vw);
+		gap: 0 8px;
+	}
+}

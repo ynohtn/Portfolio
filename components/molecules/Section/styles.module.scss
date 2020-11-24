@@ -1,0 +1,16 @@
+@import '../../../styles/settings/vars';
+
+.section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 100%;
+	height: calc(100vh - 100px);
+	z-index: 666;
+
+	&:last-child {
+		margin: 75px auto;
+	}
+}

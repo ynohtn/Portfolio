@@ -1,0 +1,17 @@
+@import '../../../styles/settings/vars';
+@import '../../../styles/anim/keyframes';
+
+.slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		font-size: 18px;
+
+		@include breakpoint($desktop) {
+			font-size: 24px;
+		}
+	}
+}

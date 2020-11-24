@@ -1,0 +1,11 @@
+export { default as Footer } from './elements/Footer/Footer';
+export { default as Header } from './elements/Header/Header';
+export { default as Layout } from './elements/Layout/Layout';
+export { default as Projects } from './molecules/Projects/Projects';
+export { default as Section } from './molecules/Section/Section';
+export { default as Contact } from './atoms/Contact/Contact';
+export { default as Landing } from './atoms/Landing/Landing';
+export { default as Project } from './atoms/Project/Project';
+export { default as Info } from './atoms/Info/Info';
+export { default as Slide } from './atoms/Slide/Slide';
+export { default as Background } from './atoms/Background/Background';

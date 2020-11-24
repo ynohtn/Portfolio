@@ -1,0 +1,19 @@
+@import '../../../styles/settings/vars';
+
+.layout {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	scroll-behavior: smooth;
+
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+	z-index: 420;
+
+	@include breakpoint($tab) {
+		margin-top: 90px;
+	}
+}

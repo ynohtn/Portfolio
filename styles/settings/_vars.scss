@@ -1,0 +1,39 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap');
+$mr: 'Manrope', sans-serif;
+
+// COLORS
+$white: #fcfcfc;
+$black: #0e0e0e;
+$purple: #ab87ff;
+
+// VARS
+// FONT WEIGHTS
+$light: 300;
+$reg: 400;
+$smb: 600;
+$bold: 700;
+
+// FONT SIZES
+
+// RESPONSIVE
+// BREAKPOINTS
+$s: 375;
+$iphx: 812;
+$tab: 768;
+$desktop: 1024;
+$big: 1366;
+$large: 1440;
+
+// MEDIA QUERY MIXIN
+@mixin breakpoint($point) {
+	@media (min-width: $point + 'px') {
+		@content;
+	}
+}
+
+@mixin wh($w, $h) {
+	@media (max-width: $w + 'px') and (max-height: $h + 'px') {
+		@content;
+	}
+}

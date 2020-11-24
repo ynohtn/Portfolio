@@ -1,0 +1,33 @@
+@import '../../../styles/settings/vars';
+@import '../../../styles/anim/keyframes';
+
+.contact {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+
+	@include breakpoint($desktop) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	p {
+		margin-top: 4px;
+	}
+}
+
+.imgCtn {
+	padding: 6px;
+	padding-bottom: 3px;
+	&:hover {
+		animation: blink 1s infinite;
+	}
+}
+
+.img {
+	&:hover {
+		animation: rotate 1s infinite;
+	}
+}

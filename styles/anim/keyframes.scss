@@ -1,0 +1,20 @@
+// KEYFRAMES
+@keyframes rotate {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes blink {
+	0%,
+	100% {
+		border: 1px inset rgba(0, 0, 0, 0.8);
+	}
+	50% {
+		border: 1px inset rgba(255, 255, 255, 0);
+	}
+}

@@ -1,0 +1,41 @@
+@import '../../../styles/settings/vars';
+@import '../../../styles/anim/keyframes';
+
+.infoctn {
+	padding: 16px 4px;
+
+	@include breakpoint($desktop) {
+		margin: 50px auto;
+		padding: 16px;
+	}
+}
+
+.infoDesc {
+	margin: 28px 0 56px 0;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: justify;
+
+	@include breakpoint($desktop) {
+		margin: 100px 0;
+		font-size: 28px;
+		line-height: 42px;
+	}
+
+	@include breakpoint($big) {
+		margin: 100px 0 200px 0;
+	}
+}
+
+.social {
+	margin: 24px 0 0 0;
+
+	@include breakpoint($desktop) {
+		font-size: 24px;
+		margin: 48px 0 0 0;
+	}
+
+	p {
+		margin: 0 0 28px 0;
+	}
+}
