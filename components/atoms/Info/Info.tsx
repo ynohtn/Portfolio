@@ -20,7 +20,7 @@ const Info = ({ title, content, contact }: Info) => {
 				</a>
 			</div>
 			<div className={styles.social}>
-				<p>Jetez un oeil à mon code sur </p>
+				<p>Jetez un œil à mon code sur </p>
 				<a href={contact.github} target="_blank">
 					GitHub
 				</a>

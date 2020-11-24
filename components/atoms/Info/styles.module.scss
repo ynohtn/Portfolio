@@ -21,10 +21,6 @@
 		font-size: 28px;
 		line-height: 42px;
 	}
-
-	@include breakpoint($big) {
-		margin: 100px 0 200px 0;
-	}
 }
 
 .social {

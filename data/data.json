@@ -3,7 +3,7 @@
     "type": "home",
     "content" : {
       "name": "Anthony Reynaud",
-      "job": "Développeur front-end freelance"
+      "job": "Développeur web freelance"
     }
   },
   {
@@ -77,10 +77,10 @@
   },
   {
     "noSection": false,
-    "title": "INFO",
+    "title": "INFOS",
     "type": "info",
     "content": {
-      "desc": "Après 2 ans d'expérience en agence web, j'ai eu l'occasion de réaliser un panel de site assez large. Du luxe au vendeur de materiel audio en passant par les spiritueux. Je travaille à présent à mon compte. En renfort d'équipe sur des missions à moyen / long terme. Ou pour vos projets comme un blog, book, portfolio, site vitrine..."
+      "desc": "Après 2 ans d'expérience en agence web, j'ai eu l'occasion de réaliser un panel de site assez large. Du luxe au vendeur de materiel audio en passant par les spiritueux. Je travaille à présent à mon compte en tant que développeur web, évoluant dans l'écosystème Javascript. En renfort d'équipe sur des missions à moyen / long terme. Ou pour vos projets comme un blog, book, portfolio, site vitrine..."
     },
     "contact": {
       "mail": "anthonyreynaud.dev@gmail.com",
