@@ -6,9 +6,9 @@ import data from '../data/data.json';
 
 export default function App({ Component, pageProps }: AppProps) {
 	const menu: { txt: string; url: string }[] = [
-		{ txt: 'home', url: '#home' },
-		{ txt: 'work', url: '#work' },
-		{ txt: 'info', url: '#info' }
+		{ txt: 'HOME', url: '#home' },
+		{ txt: 'WORK', url: '#work' },
+		{ txt: 'INFOS', url: '#info' }
 	];
 
 	return (

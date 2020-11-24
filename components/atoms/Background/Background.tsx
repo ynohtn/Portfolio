@@ -32,7 +32,7 @@ const Mesh = (props) => {
 		<>
 			<mesh ref={mesh} {...props}>
 				<icosahedronBufferGeometry args={[100, 10]} />
-				<meshBasicMaterial color={'#ab87ff'} wireframe />
+				<meshBasicMaterial color={'#4714a7'} wireframe />
 			</mesh>
 		</>
 	);

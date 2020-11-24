@@ -2,14 +2,14 @@ import Head from 'next/head';
 // import {
 // 	GetStaticProps
 // 	// GetStaticPaths,
-// 	// GetServerSideProps
+//   // GetServerSideProps
 // } from 'next';
 import { Section } from '../components';
 import styles from '../styles/Home.module.scss';
 import data from '../data/data.json';
 
 export default function Home() {
-	console.log(data);
+	// console.log(data);
 
 	return (
 		<>
