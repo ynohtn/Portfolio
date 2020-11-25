@@ -49,8 +49,8 @@
     "projects": [
       {
         "name": "Portfolio v0",
-        "desc": "Réalisation de mon portfolio en React sous Next.js et TypeScript.",
-        "techs": ["React", "TypeScript", "Next.js"],
+        "desc": "Réalisation de mon portfolio en React sous Next.js et TypeScript. Minimaliste, voué à évoluer avec le temps et mes compétences.",
+        "techs": ["React", "TypeScript", "Next.js", "Three.js"],
         "img": "/img/projects/portfolio.png"
       },
       {
@@ -80,7 +80,7 @@
     "title": "INFOS",
     "type": "info",
     "content": {
-      "desc": "Après 2 ans d'expérience en agence web, j'ai eu l'occasion de réaliser un panel de site assez large. Du luxe au vendeur de materiel audio en passant par les spiritueux. Je travaille à présent à mon compte en tant que développeur web, évoluant dans l'écosystème Javascript. En renfort d'équipe sur des missions à moyen / long terme. Ou pour vos projets comme un blog, book, portfolio, site vitrine..."
+      "desc": "Après 2 ans d'expérience en agence web, j'ai eu l'occasion de réaliser un panel de site assez large. Du luxe au vendeur de matériel audio en passant par les spiritueux. Je travaille à présent à mon compte en tant que développeur web, évoluant dans l'écosystème Javascript. En renfort d'équipe sur des missions à moyen / long terme. Ou pour vos projets comme un blog, book, portfolio, site vitrine..."
     },
     "contact": {
       "mail": "anthonyreynaud.dev@gmail.com",
