@@ -47,7 +47,7 @@ const Seo = () => (
 		<meta property="twitter:image" content={'/img/seo.png'} />
 
 		<link rel="icon" href="/favicon.ico" />
-		<meta name="robots" content="noindex, nofollow" />
+		{/* <meta name="robots" content="noindex, nofollow" /> */}
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="mobile-web-app-capable" content="yes" />
 	</Head>
