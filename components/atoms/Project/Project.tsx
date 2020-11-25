@@ -21,7 +21,7 @@ const Project = ({ project }: Project) => {
 						</ul>
 					</div>
 				</div>
-				<figure>
+				<figure className={styles.projectCardImg}>
 					<Image
 						src={project.img}
 						alt={project.name}

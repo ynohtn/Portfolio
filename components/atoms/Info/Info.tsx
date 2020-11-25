@@ -14,29 +14,33 @@ interface Info {
 
 const Info = ({ title, content, contact }: Info) => {
 	const infoCtn = useRef(null);
-  const sectionsRefs = useRef([]);
+	const sectionsRefs = useRef([]);
 	sectionsRefs.current = [];
 
 	useEffect(() => {
-    gsap.fromTo(sectionsRefs.current, {
-      y: -50,
-      opacity: 0
-    }, {
-			scrollTrigger: {
-				trigger: infoCtn.current,
-				toggleActions: 'restart pause reverse pause',
-				start: 'top +=70%',
-        scrub: 1,
-				// Base vertical scrolling on how wide the container is so it feels more natural.
-				end: () => '+=' + infoCtn.current.offsetWidth / 5
-      },
-      y: 0,
-      opacity: 1,
-      stagger: 0.1
-		});
-  }, []);
-  
-  const addToRefs = (el) => {
+		gsap.fromTo(
+			sectionsRefs.current,
+			{
+				y: -50,
+				opacity: 0
+			},
+			{
+				scrollTrigger: {
+					trigger: infoCtn.current,
+					toggleActions: 'restart pause reverse pause',
+					start: 'top +=70%',
+					scrub: 1,
+					// Base vertical scrolling on how wide the container is so it feels more natural.
+					end: () => '+=' + infoCtn.current.offsetWidth / 5
+				},
+				y: 0,
+				opacity: 1,
+				stagger: 0.1
+			}
+		);
+	}, []);
+
+	const addToRefs = (el) => {
 		if (el && !sectionsRefs.current.includes(el)) {
 			sectionsRefs.current.push(el);
 		}
@@ -45,7 +49,9 @@ const Info = ({ title, content, contact }: Info) => {
 	return (
 		<div ref={infoCtn} className={styles.infoctn}>
 			<h1 ref={addToRefs}>{title}</h1>
-			<p ref={addToRefs} className={styles.infoDesc}>{content.desc}</p>
+			<p ref={addToRefs} className={styles.infoDesc}>
+				{content.desc}
+			</p>
 			<div ref={addToRefs} className={styles.social}>
 				<p>Apprenez en plus sur </p>
 				<a href={contact.linkedin} target="_blank">
