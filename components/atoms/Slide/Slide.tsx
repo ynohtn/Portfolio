@@ -28,8 +28,8 @@ const Slide = ({ title, content }: Slide) => {
 			ttl,
 			{ x: xl, y: -200, opacity: 0 },
 			{
-        x: xlEnd,
-        y: 0,
+				x: xlEnd,
+				y: 0,
 				opacity: 1,
 				scrollTrigger: {
 					trigger: triggerRef.current,
@@ -47,8 +47,8 @@ const Slide = ({ title, content }: Slide) => {
 			txt,
 			{ x, y: 200, opacity: 0 },
 			{
-        x: xEnd,
-        y: 0,
+				x: xEnd,
+				y: 0,
 				opacity: 1,
 				scrollTrigger: {
 					trigger: triggerRef.current,
