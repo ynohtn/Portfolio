@@ -1,4 +1,3 @@
-import Head from 'next/head';
 // import {
 // 	GetStaticProps
 // 	// GetStaticPaths,
@@ -13,10 +12,6 @@ export default function Home() {
 
 	return (
 		<>
-			<Head>
-				<title>Anthony Reynaud /// Développeur Freelance</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
 			<div className={styles.container}>
 				{data.map(
 					(section, i) =>

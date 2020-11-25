@@ -1,6 +1,5 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head';
-import { Header, Layout, Background, Footer } from '../components';
+import { Seo, Header, Layout, Background, Footer } from '../components';
 import '../styles/_globals.scss';
 import data from '../data/data.json';
 
@@ -12,13 +11,8 @@ export default function App({ Component, pageProps }: AppProps) {
 	];
 
 	return (
-		<>
-			<Head>
-				<meta name="robots" content="noindex, nofollow" />
-				<meta name="apple-mobile-web-app-capable" content="yes" />
-				<meta name="mobile-web-app-capable" content="yes" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
+    <>
+			<Seo />
 			<Header menu={menu} />
 			<Background />
 			<Layout>
