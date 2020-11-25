@@ -54,13 +54,13 @@ const Info = ({ title, content, contact }: Info) => {
 			</p>
 			<div ref={addToRefs} className={styles.social}>
 				<p>Apprenez en plus sur </p>
-				<a href={contact.linkedin} target="_blank">
+				<a href={contact.linkedin} target="_blank" rel="noopener">
 					LinkedIn
 				</a>
 			</div>
 			<div ref={addToRefs} className={styles.social}>
 				<p>Jetez un œil à mon code sur </p>
-				<a href={contact.github} target="_blank">
+				<a href={contact.github} target="_blank" rel="noopener">
 					GitHub
 				</a>
 			</div>
