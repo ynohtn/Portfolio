@@ -22,13 +22,14 @@ const Slide = ({ title, content }: Slide) => {
 		// depuis la droite
 		const [x, xEnd] = ['50%', (txt.scrollWidth - titleRef.current) * -1];
 		// depuis la gauche
-		// const [xl, xlEnd] = [ttl.scrollWidth * -1, 0];
+		const [xl, xlEnd] = [(ttl.scrollWidth + 200) * -1, 0];
 
 		gsap.fromTo(
 			ttl,
-			{ x, opacity: 0 },
+			{ x: xl, y: -200, opacity: 0 },
 			{
-				x: xEnd,
+        x: xlEnd,
+        y: 0,
 				opacity: 1,
 				scrollTrigger: {
 					trigger: triggerRef.current,
@@ -44,9 +45,10 @@ const Slide = ({ title, content }: Slide) => {
 
 		gsap.fromTo(
 			txt,
-			{ x, opacity: 0 },
+			{ x, y: 200, opacity: 0 },
 			{
-				x: xEnd,
+        x: xEnd,
+        y: 0,
 				opacity: 1,
 				scrollTrigger: {
 					trigger: triggerRef.current,

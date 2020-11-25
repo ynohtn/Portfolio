@@ -15,14 +15,14 @@ const Landing = ({ landingContent }: Landing) => {
 			<h1>
 				<Scrambler
 					characters={characters}
-					renderIn={1000}
+					renderIn={500}
 					text={landingContent.name}
 				/>
 			</h1>
 			<h2>
 				<Scrambler
 					characters={characters}
-					renderIn={1000}
+					renderIn={500}
 					text={landingContent.job}
 				/>
 			</h2>

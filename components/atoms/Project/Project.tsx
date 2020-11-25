@@ -13,6 +13,7 @@ const Project = ({ project }: Project) => {
 					<div className={styles.projectCardText}>
 						<h2>{project.name}</h2>
 						<p>{project.desc}</p>
+						<h3>Stack :</h3>
 						<ul>
 							{project.techs.map((tech, i) => (
 								<li key={i}>{tech}</li>

@@ -1,3 +1,7 @@
+import { useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 import styles from './styles.module.scss';
 
 interface Info {
@@ -9,23 +13,52 @@ interface Info {
 }
 
 const Info = ({ title, content, contact }: Info) => {
+	const infoCtn = useRef(null);
+  const sectionsRefs = useRef([]);
+	sectionsRefs.current = [];
+
+	useEffect(() => {
+    gsap.fromTo(sectionsRefs.current, {
+      y: -50,
+      opacity: 0
+    }, {
+			scrollTrigger: {
+				trigger: infoCtn.current,
+				toggleActions: 'restart pause reverse pause',
+				start: 'top +=70%',
+        scrub: 1,
+				// Base vertical scrolling on how wide the container is so it feels more natural.
+				end: () => '+=' + infoCtn.current.offsetWidth / 5
+      },
+      y: 0,
+      opacity: 1,
+      stagger: 0.1
+		});
+  }, []);
+  
+  const addToRefs = (el) => {
+		if (el && !sectionsRefs.current.includes(el)) {
+			sectionsRefs.current.push(el);
+		}
+	};
+
 	return (
-		<div className={styles.infoctn}>
-			<h1>{title}</h1>
-			<p className={styles.infoDesc}>{content.desc}</p>
-			<div className={styles.social}>
+		<div ref={infoCtn} className={styles.infoctn}>
+			<h1 ref={addToRefs}>{title}</h1>
+			<p ref={addToRefs} className={styles.infoDesc}>{content.desc}</p>
+			<div ref={addToRefs} className={styles.social}>
 				<p>Apprenez en plus sur </p>
 				<a href={contact.linkedin} target="_blank">
 					LinkedIn
 				</a>
 			</div>
-			<div className={styles.social}>
+			<div ref={addToRefs} className={styles.social}>
 				<p>Jetez un œil à mon code sur </p>
 				<a href={contact.github} target="_blank">
 					GitHub
 				</a>
 			</div>
-			<div className={styles.social}>
+			<div ref={addToRefs} className={styles.social}>
 				<p>Demandez un devis (gratuit) ou parlez moi de votre projet</p>
 				<a href={`mailto:${contact.mail}`}>{contact.mail}</a>
 			</div>
