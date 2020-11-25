@@ -15,7 +15,7 @@
   },
   {
     "noSection": false,
-    "type": "fullSpacer"
+    "type": "spacer"
   },
   {
     "type": "slide",
@@ -26,7 +26,7 @@
   },
   {
     "noSection": false,
-    "type": "fullSpacer"
+    "type": "spacer"
   },
   {
     "type": "slide",
@@ -69,11 +69,11 @@
   },
   {
     "noSection": false,
-    "type": "fullSpacer"
+    "type": "spacer"
   },
   {
     "noSection": false,
-    "type": "fullSpacer"
+    "type": "spacer"
   },
   {
     "noSection": false,
