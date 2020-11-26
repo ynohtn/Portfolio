@@ -5,7 +5,7 @@ interface Section {
 	sectionType: string;
 	title?: string;
 	content?: { name?: string; job?: string; desc?: string };
-	projects?: { desc: string; name: string; techs: string[]; img: string }[];
+	projects?: { desc: string; name: string; techs: string[]; img: { src: string; width: number; height: number; mobile?: {src: string; width: number; height: number} } }[];
 	contact?: { mail: string; github: string; linkedin: string; siret: string };
 }
 

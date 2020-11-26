@@ -31,6 +31,9 @@
 	}
 
 	.projectCardText {
+		@include breakpoint($desktop) {
+			padding-right: 50px;
+		}
 		h2 {
 			margin: 0 0 8px 0;
 
@@ -71,6 +74,7 @@
 .projectCardImg {
 	grid-row: 1;
 	grid-column: 1;
+	// max-height: 145px;
 
 	@include breakpoint($desktop) {
 		grid-row: 1;

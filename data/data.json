@@ -51,19 +51,36 @@
         "name": "Portfolio v0",
         "desc": "Réalisation de mon portfolio en React sous Next.js et TypeScript. Minimaliste, voué à évoluer avec le temps et mes compétences.",
         "techs": ["React", "TypeScript", "Next.js", "Three.js"],
-        "img": "/img/projects/portfolio.png"
+        "img": {
+          "src": "/img/projects/portfolio.png",
+          "width": 1440,
+          "height": 800
+        }
       },
       {
         "name": "Samu Social de Paris",
         "desc": "Projet de fin d'étude pour un client réel. Réalisation d'un back office en React et d'une application mobile en React Native permettant la planification de visites de logements sociaux.",
         "techs": ["React", "React Native", "GraphQl"],
-        "img": "/img/projects/BO-samu.jpg"
+        "img": {
+          "src": "/img/projects/appli-samu.jpg",
+          "width": 375,
+          "height": 814,
+          "mobile": {
+            "src": "/img/projects/BO-samu.jpg",
+            "width": 1440,
+            "height": 814
+          }
+        }
       },
       {
         "name": "Studio",
         "desc": "Réalisation d'un Studio audio en React sous Next.js et Prismic en gestionnaire de contenu.",
         "techs": ["React", "Next.js", "Prismic"],
-        "img": "/img/projects/studio.png"
+        "img": {
+          "src": "/img/projects/studio.png",
+          "width": 1440,
+          "height": 800
+        }
       }
     ]
   },
