@@ -11,6 +11,10 @@
 	z-index: 666;
 
 	&:last-child {
-		margin: 75px auto;
+		margin: 145px auto 75px;
+
+		@include breakpoint($s) {
+			margin: 75px auto;
+		}
 	}
 }

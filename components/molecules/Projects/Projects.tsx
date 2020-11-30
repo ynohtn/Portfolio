@@ -7,7 +7,17 @@ import { Project } from '../../index';
 
 interface Projects {
 	title: string;
-	content: { desc: string; name: string; techs: string[]; img: string }[];
+	content: {
+		desc: string;
+		name: string;
+		techs: string[];
+		img: {
+			src: string;
+			width: number;
+			height: number;
+			mobile?: { src: string; width: number; height: number };
+		};
+	}[];
 }
 
 const Projects = ({ title, content }: Projects) => {

@@ -9,4 +9,5 @@ export { default as Project } from './atoms/Project/Project';
 export { default as Info } from './atoms/Info/Info';
 export { default as Slide } from './atoms/Slide/Slide';
 export { default as Background } from './atoms/Background/Background';
+export { default as Spiner } from './atoms/Spiner/Spiner';
 export { default as Seo } from './atoms/Seo';
