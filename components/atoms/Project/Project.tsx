@@ -7,18 +7,24 @@ interface Project {
 		desc: string;
 		name: string;
 		techs: string[];
-		img: { src: string; width: number; height: number; mobile?: {src: string; width: number; height: number} };
+		img: {
+			src: string;
+			width: number;
+			height: number;
+			mobile?: { src: string; width: number; height: number };
+		};
 	};
 }
 
 const Project = memo(({ project }: Project) => {
-  const [width, setWidth] = useState(0);
-  
-  useEffect(() => {
-    setWidth(window.innerWidth);
-    window.addEventListener('resize', ()=> setWidth(window.innerWidth));
-    return () => window.removeEventListener('resize', ()=> setWidth(window.innerWidth));
-  }, [width]);
+	const [width, setWidth] = useState(0);
+
+	useEffect(() => {
+		setWidth(window.innerWidth);
+		window.addEventListener('resize', () => setWidth(window.innerWidth));
+		return () =>
+			window.removeEventListener('resize', () => setWidth(window.innerWidth));
+	}, [width]);
 
 	return (
 		project && (
@@ -37,10 +43,22 @@ const Project = memo(({ project }: Project) => {
 				</div>
 				<figure className={styles.projectCardImg}>
 					<Image
-						src={project.img.mobile && width <= 1024 ? project.img.mobile.src : project.img.src }
+						src={
+							project.img.mobile && width <= 1800
+								? project.img.mobile.src
+								: project.img.src
+						}
 						alt={project.name}
-						width={project.img.mobile && width <= 1024 ? project.img.mobile.width : project.img.width}
-						height={project.img.mobile && width <= 1024 ? project.img.mobile.height : project.img.height}
+						width={
+							project.img.mobile && width <= 1800
+								? project.img.mobile.width
+								: project.img.width
+						}
+						height={
+							project.img.mobile && width <= 1800
+								? project.img.mobile.height
+								: project.img.height
+						}
 						layout="intrinsic"
 						// loading="lazy"
 					/>

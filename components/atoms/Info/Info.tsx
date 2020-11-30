@@ -56,6 +56,14 @@ const Info = ({ title, content, contact }: Info) => {
 				<p>Apprenez en plus sur </p>
 				<a href={contact.linkedin} target="_blank" rel="noopener">
 					LinkedIn
+				</a>{' '}
+				ou sur{' '}
+				<a
+					href={'https://www.malt.fr/profile/anthonyreynaud'}
+					target="_blank"
+					rel="noopener"
+				>
+					Malt
 				</a>
 			</div>
 			<div ref={addToRefs} className={styles.social}>

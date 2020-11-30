@@ -11,7 +11,12 @@ interface Projects {
 		desc: string;
 		name: string;
 		techs: string[];
-		img: { src: string; width: number; height: number; mobile?: {src: string; width: number; height: number} };
+		img: {
+			src: string;
+			width: number;
+			height: number;
+			mobile?: { src: string; width: number; height: number };
+		};
 	}[];
 }
 

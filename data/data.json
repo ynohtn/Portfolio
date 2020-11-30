@@ -73,8 +73,28 @@
         }
       },
       {
+        "name": "Kora",
+        "desc": "Réalisation d'un site vitrine pour un frabricant/distributeur de matériel audio.",
+        "techs": ["Wordpress", "HTML", "PHP"],
+        "img": {
+          "src": "/img/projects/kora.png",
+          "width": 1440,
+          "height": 800
+        }
+      },
+      {
+        "name": "Baguelin",
+        "desc": "Réalisation d'un site pour une agence immobilière.",
+        "techs": ["Wordpress", "HTML", "PHP"],
+        "img": {
+          "src": "/img/projects/baguelin.png",
+          "width": 1440,
+          "height": 800
+        }
+      },
+      {
         "name": "Studio",
-        "desc": "Réalisation d'un Studio audio en React sous Next.js et Prismic en gestionnaire de contenu.",
+        "desc": "Réalisation d'un Studio audio en React sous Next.js et Prismic en gestionnaire de contenu. Travail encore en cours.",
         "techs": ["React", "Next.js", "Prismic"],
         "img": {
           "src": "/img/projects/studio.png",
